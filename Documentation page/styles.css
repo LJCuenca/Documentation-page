@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "OpenSans-VariableFont_wdth\,wght";
+    src: url(assets/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #272727;
+}
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    width: 24%;
+    border:1px;
+    background-color: #202020;
+    height: 100%;
+}
+#JS_Documentation {
+    font-family: "OpenSans-VariableFont_wdth\,wght"; 
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #bebebe;
+}
+.nav-link {
+    font-family: "OpenSans-VariableFont_wdth\,wght"; 
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    color: #fefefe;
+    text-align: left;
+    line-height: 24px;
+    padding-right: 12px;
+}
+.nav-link:hover {
+    font-weight: 600;
+    color: #dfdfdf;
+}
+
+#navbarlink{
+    list-style-type:none;
+    align-items: left;
+    border-top: 1px solid #bebebe;
+}
+#main-doc {
+    position: absolute;
+    right: 24px;
+    width: 72%;
+}
+header{
+    font-family: "OpenSans-VariableFont_wdth\,wght"; 
+    font-size: 24px;
+    font-weight: 500;
+    color: #bebebe;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+}
+p{
+    font-family: "OpenSans-VariableFont_wdth\,wght"; 
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 16px;
+    color: #dfdfdf;
+}
+ul{
+    font-family: "OpenSans-VariableFont_wdth\,wght"; 
+    font-size: 16px;
+    font-weight: 300;
+    color: #dfdfdf;
+    padding-left: 80px;
+}
+ul li{
+    padding-top: 16px;
+}
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: rgba(94, 94, 94, 0.5);
+    color: #dfdfdf;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#id_reference { 
+    color: rgb(148, 148, 235);
+    padding-bottom: 60px;
+}
+@media (max-width:800px) {
+    #navbar{
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        border: none;
+        z-index: 1;
+        border-bottom: 1px solid #fefefe }
+
+    #main-doc {    
+        position: relative;
+        margin: 280px 32px 32px 32px;
+        width: 100%;
+       
+    }
+    header{font-size: 20px; }
+    p{ font-size: 14px;}
+    ul{ font-size: 14px;}
+}
